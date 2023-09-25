@@ -1,0 +1,612 @@
+fileFormatVersion: 2
+guid: 1663c9667e83241c58960daa4079ff2f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 718, z: 924, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: 0
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: neko_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 716
+        width: 288
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54f5c374f7ebf4ed6b3bf8dde9213aac
+      internalID: -211623922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neko_1
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 717
+        width: 288
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc30045585806416582fc74d36f631d6
+      internalID: 569975803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neko_2
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 717
+        width: 288
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5acb12526a26d4059b0508c3d8f5595c
+      internalID: -1541362249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neko_3
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 717
+        width: 288
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0d8946ccff4a4f81b42d9404535018e
+      internalID: 2041976884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neko_4
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 515
+        width: 195
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 599184db33d91407a823ae3dde99087e
+      internalID: 2076993693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neko_5
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 515
+        width: 197
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5807d3249dd8a4d4fb85d1d3e591a46b
+      internalID: 728483205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neko_6
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 253
+        width: 200
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62182962a2e9e414a98ec0c9d1a69995
+      internalID: -738902901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neko_7
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 252
+        width: 197
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1abd7525825f34c2193086c669834b4b
+      internalID: 578240006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neko_8
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 255
+        width: 202
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 980de76257e404d3ab78b71250039905
+      internalID: -921489033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neko_9
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 255
+        width: 231
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 186ff854e4b0c454a98664d75cfd8475
+      internalID: 444909084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neko_10
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 1
+        width: 203
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5825a88ed3e1b43b8b75bf513ed0792e
+      internalID: 1335022215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neko_11
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 1
+        width: 219
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a36c2dd3e6bb4440b5fbc547111450d
+      internalID: 1449968821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neko_12
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 2
+        width: 221
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14ebead74a23d4bca8d8e791b289ffe8
+      internalID: 320538232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neko_13
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 1
+        width: 211
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f3a27e83d4234bd696a86cb0bf5dfe4
+      internalID: -1352548983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline:
+    - - {x: -563, y: -287.5}
+      - {x: -577, y: -325.5}
+      - {x: -577, y: -444.5}
+      - {x: -525, y: -459.5}
+      - {x: -377, y: -459.5}
+      - {x: -370, y: -419.5}
+      - {x: -370, y: -287.5}
+    - - {x: -62, y: -294.5}
+      - {x: -92, y: -318.5}
+      - {x: -90, y: -343.5}
+      - {x: -144, y: -301.5}
+      - {x: -211, y: -290.5}
+      - {x: -254, y: -290.5}
+      - {x: -279, y: -317.5}
+      - {x: -279, y: -445.5}
+      - {x: -277, y: -455.5}
+      - {x: -239, y: -459.5}
+      - {x: -87, y: -459.5}
+      - {x: -59, y: -361.5}
+      - {x: -56, y: -321.5}
+      - {x: -56, y: -295.5}
+    - - {x: 475, y: -301.5}
+      - {x: 404, y: -287.5}
+      - {x: 363, y: -287.5}
+      - {x: 345, y: -316.5}
+      - {x: 345, y: -390.5}
+      - {x: 370, y: -459.5}
+      - {x: 548, y: -459.5}
+      - {x: 560, y: -336.5}
+      - {x: 560, y: -296.5}
+      - {x: 520, y: -320.5}
+    - - {x: 252, y: -294.5}
+      - {x: 240, y: -288.5}
+      - {x: 44, y: -288.5}
+      - {x: 34, y: -292.5}
+      - {x: 34, y: -381.5}
+      - {x: 43, y: -384.5}
+      - {x: 65, y: -392.5}
+      - {x: 72, y: -395.5}
+      - {x: 74, y: -395.5}
+      - {x: 77, y: -397.5}
+      - {x: 72, y: -395.5}
+      - {x: 68, y: -394.5}
+      - {x: 63, y: -394.5}
+      - {x: 65, y: -413.5}
+      - {x: 94, y: -453.5}
+      - {x: 120, y: -459.5}
+      - {x: 228, y: -459.5}
+      - {x: 259, y: -386.5}
+      - {x: 259, y: -301.5}
+      - {x: 258, y: -299.5}
+    - - {x: 40, y: -400.5}
+      - {x: 40, y: -414.5}
+      - {x: 55, y: -450.5}
+      - {x: 60, y: -451.5}
+      - {x: 89, y: -451.5}
+      - {x: 89, y: -436.5}
+      - {x: 51, y: -400.5}
+    - - {x: -514, y: -429.5}
+      - {x: -515, y: -429.5}
+      - {x: -518, y: -426.5}
+      - {x: -519, y: -426.5}
+      - {x: -525, y: -420.5}
+      - {x: -525, y: -419.5}
+      - {x: -527, y: -417.5}
+      - {x: -527, y: -416.5}
+      - {x: -530, y: -412.5}
+      - {x: -527, y: -412.5}
+      - {x: -526, y: -411.5}
+      - {x: -523, y: -411.5}
+      - {x: -522, y: -410.5}
+      - {x: -517, y: -410.5}
+      - {x: -516, y: -409.5}
+      - {x: -502, y: -409.5}
+      - {x: -501, y: -410.5}
+      - {x: -498, y: -411.5}
+      - {x: -500, y: -412.5}
+      - {x: -504, y: -421.5}
+      - {x: -504, y: -423.5}
+      - {x: -506, y: -426.5}
+      - {x: -506, y: -428.5}
+      - {x: -508, y: -433.5}
+      - {x: -509, y: -432.5}
+    - - {x: 390, y: -397.5}
+      - {x: 390, y: -398.5}
+      - {x: 392, y: -398.5}
+      - {x: 391, y: -400.5}
+      - {x: 392, y: -405.5}
+      - {x: 393, y: -404.5}
+    - - {x: -63, y: -42.5}
+      - {x: -94, y: -67.5}
+      - {x: -91, y: -76.5}
+      - {x: -142, y: -59.5}
+      - {x: -236, y: -42.5}
+      - {x: -261, y: -42.5}
+      - {x: -261, y: -190.5}
+      - {x: -228, y: -209.5}
+      - {x: -121, y: -209.5}
+      - {x: -94, y: -201.5}
+      - {x: -61, y: -111.5}
+      - {x: -60, y: -87.5}
+      - {x: -60, y: -42.5}
+    - - {x: -379, y: -39.5}
+      - {x: -492, y: -39.5}
+      - {x: -566, y: -52.5}
+      - {x: -574, y: -64.5}
+      - {x: -574, y: -186.5}
+      - {x: -552, y: -208.5}
+      - {x: -386, y: -208.5}
+      - {x: -370, y: -200.5}
+      - {x: -370, y: -64.5}
+      - {x: -375, y: -42.5}
+    - - {x: 248, y: -51.5}
+      - {x: 218, y: -59.5}
+      - {x: 112, y: -51.5}
+      - {x: 68, y: -51.5}
+      - {x: 51, y: -79.5}
+      - {x: 51, y: -154.5}
+      - {x: 73, y: -206.5}
+      - {x: 213, y: -206.5}
+      - {x: 218, y: -204.5}
+      - {x: 257, y: -64.5}
+      - {x: 257, y: -51.5}
+    - - {x: 354, y: -52.5}
+      - {x: 354, y: -194.5}
+      - {x: 413, y: -206.5}
+      - {x: 563, y: -206.5}
+      - {x: 589, y: -105.5}
+      - {x: 589, y: -52.5}
+    - - {x: 121, y: -169.5}
+      - {x: 123, y: -169.5}
+      - {x: 120, y: -172.5}
+      - {x: 121, y: -172.5}
+    - - {x: -406, y: 195.5}
+      - {x: -455, y: 215.5}
+      - {x: -557, y: 209.5}
+      - {x: -569, y: 188.5}
+      - {x: -569, y: 61.5}
+      - {x: -559, y: 53.5}
+      - {x: -395, y: 53.5}
+      - {x: -370, y: 91.5}
+      - {x: -370, y: 219.5}
+      - {x: -379, y: 219.5}
+      - {x: -381, y: 218.5}
+    - - {x: -82, y: 62.5}
+      - {x: -61, y: 144.5}
+      - {x: -61, y: 219.5}
+      - {x: -68, y: 219.5}
+      - {x: -100, y: 196.5}
+      - {x: -86, y: 170.5}
+      - {x: -137, y: 204.5}
+      - {x: -252, y: 205.5}
+      - {x: -262, y: 183.5}
+      - {x: -262, y: 106.5}
+      - {x: -230, y: 53.5}
+      - {x: -192, y: 53.5}
+      - {x: -189, y: 62.5}
+      - {x: -176, y: 53.5}
+      - {x: -90, y: 53.5}
+    - - {x: -606, y: 459.5}
+      - {x: -606, y: 255.5}
+      - {x: -318, y: 255.5}
+      - {x: -316, y: 257.5}
+      - {x: -316, y: 459.5}
+    - - {x: -300, y: 459.5}
+      - {x: -300, y: 257.5}
+      - {x: -298, y: 255.5}
+      - {x: -10, y: 255.5}
+      - {x: -8, y: 257.5}
+      - {x: -8, y: 459.5}
+    - - {x: 8, y: 459.5}
+      - {x: 8, y: 257.5}
+      - {x: 10, y: 255.5}
+      - {x: 298, y: 255.5}
+      - {x: 300, y: 257.5}
+      - {x: 300, y: 459.5}
+    - - {x: 316, y: 459.5}
+      - {x: 316, y: 257.5}
+      - {x: 318, y: 255.5}
+      - {x: 606, y: 255.5}
+      - {x: 606, y: 459.5}
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      neko_0: -211623922
+      neko_5: 728483205
+      neko_10: 1335022215
+      neko_12: 320538232
+      neko_4: 2076993693
+      neko_2: -1541362249
+      neko_11: 1449968821
+      neko_13: -1352548983
+      neko_6: -738902901
+      neko_3: 2041976884
+      neko_8: -921489033
+      neko_9: 444909084
+      neko_7: 578240006
+      neko_1: 569975803
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
