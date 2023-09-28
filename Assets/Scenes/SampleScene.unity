@@ -1625,7 +1625,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_Sprite: {fileID: 208269515, guid: 3f5807ebac09c43c29a457d0eb418f67, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -19130,7 +19130,7 @@ MonoBehaviour:
       type: 3}
   - m_EnemyPrefab: {fileID: 8136078660498659464, guid: 00f4cd3b97a204cf696a19be0c5e2608,
       type: 3}
-  m_NumEnemy: 3
+  m_NumEnemy: 40
 --- !u!4 &1350884920
 Transform:
   m_ObjectHideFlags: 0
