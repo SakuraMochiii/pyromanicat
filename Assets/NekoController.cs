@@ -8,7 +8,7 @@ public class NekoController : MonoBehaviour
     private Animator animator;
     private SpriteRenderer sr;
     private Vector3 destination; // cat runs to destination
-    private BoxCollider2D collider; //note: this collider is a trigger!
+    private BoxCollider2D col; //note: this collider is a trigger!
     
 
     // Start is called before the first frame update
@@ -17,30 +17,35 @@ public class NekoController : MonoBehaviour
         destination = new Vector3(0, 0, 0); // center of screen
         animator = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
-        collider = GetComponent<BoxCollider2D>();
+        col = GetComponent<BoxCollider2D>();
+        StartCoroutine(RunAndScratch());
     }
 
     // Update is called once per frame
     void Update()
     {
-        if ((destination - transform.position).magnitude > 0.5) 
+
+    }
+    IEnumerator RunAndScratch()
+    {
+        RandomizeDestination();
+        animator.SetBool("running", true);
+        while ((destination - transform.position).magnitude > 0.5)
         {
             // if the cat's distance is > 0.5 from destination,
             // move in the direction torwards destination
             Vector3 moveDirection = (destination - transform.position).normalized * speed;
             transform.position += moveDirection * Time.deltaTime;
-            animator.SetBool("running", true);
             sr.flipX = moveDirection.x > 0; // make sure cat is facing left or right!
-            
-        } else
-        {
-            // if the cat is at the destination
-            animator.SetBool("running", false);
-            RandomizeDestination(); // make a new destination for the cat!
-
+            yield return null;
         }
-    }
+        animator.SetBool("running", false);
+        animator.SetBool("scratching", true);
+        yield return new WaitForSeconds(2);
+        animator.SetBool("scratching", false);
+        StartCoroutine(RunAndScratch());
 
+    }
     private void RandomizeDestination ()
     {
         // hard coded values of the bounds of the room
