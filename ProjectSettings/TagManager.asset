@@ -11,6 +11,7 @@ TagManager:
   - Number2
   - Operation
   - InputField
+  - Cursor
   layers:
   - Default
   - TransparentFX

@@ -6,10 +6,14 @@ public class Obj : MonoBehaviour
 {
     public bool onFire;
     public GameObject Fire;
+    private GameObject cursor;
+    private CursorManager cursorScript;
 
     private void Start()
     {
         onFire = false;
+        cursor = GameObject.FindGameObjectWithTag("Cursor");
+        cursorScript = cursor.GetComponent<CursorManager>();
     }
     public void CatchOnFire()
     {
@@ -26,12 +30,17 @@ public class Obj : MonoBehaviour
         {
             CatchOnFire();
         }
+        if (collision.CompareTag("Cursor"))
+        {
+            PutOutFire();
+        }
+        
     }
 
     public void PutOutFire()
     {
         if (!onFire) return;
         onFire = false;
-        Destroy(transform.GetChild(1));
+        Destroy(transform.parent.GetChild(1).gameObject);
     }
 }

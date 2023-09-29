@@ -7,14 +7,18 @@ public class CursorManager : MonoBehaviour
     [SerializeField] private Texture2D cursorTextureNormal;
     [SerializeField] private Texture2D cursorTextureClick;
     private Vector2 cursorHotspot;
-    private bool pouring;
+    public bool pouring;
     private Vector2 mousePosition;
+    private CircleCollider2D col;
+    
 
     private void Start()
     {
         cursorHotspot = new Vector2(cursorTextureClick.width / 2, cursorTextureClick.height / 2);
         Cursor.SetCursor(cursorTextureNormal, cursorHotspot, CursorMode.Auto);
         pouring = false;
+        col = GetComponent<CircleCollider2D>();
+        col.enabled = false;
     }
     private void Update()
     {
@@ -24,10 +28,14 @@ public class CursorManager : MonoBehaviour
         {
             Cursor.SetCursor(cursorTextureClick, cursorHotspot, CursorMode.Auto);
             pouring = true;
+            col.enabled = true;
         } else if (Input.GetMouseButtonDown(0) && pouring)
         {
             Cursor.SetCursor(cursorTextureNormal, cursorHotspot, CursorMode.Auto);
             pouring = false;
+            col.enabled = false;
         }
     }
+
+
 }
