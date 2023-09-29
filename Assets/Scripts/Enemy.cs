@@ -31,7 +31,9 @@ public class Enemy : MonoBehaviour
     {
         if (collision.transform.CompareTag("Player"))
         {
-            Explode();
+            collision.gameObject.SetActive(false);
+            Instantiate(fireObj, collision.transform.position, Quaternion.identity);
+            //Explode();
         }
     }
     #endregion
