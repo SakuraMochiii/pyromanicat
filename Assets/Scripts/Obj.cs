@@ -4,23 +4,34 @@ using UnityEngine;
 
 public class Obj : MonoBehaviour
 {
-    #region Animation_components
-    Animator anim;
-    #endregion
+    public bool onFire;
+    public GameObject Fire;
 
-    #region Unity_functions
-    private void Awake()
+    private void Start()
     {
-        anim = GetComponent<Animator>();
+        onFire = false;
     }
-    public void Burn()
+    public void CatchOnFire()
     {
-        //change object to burning state
-        anim.SetBool("Burn", true);
+        if (onFire) return;
+        
+        onFire = true;
+        Instantiate(Fire, transform.parent.transform.position, Quaternion.identity, transform.parent);
+
+        
     }
-    public void Save()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        anim.SetBool("Burn", false);
+        if (collision.CompareTag("Enemy"))
+        {
+            CatchOnFire();
+        }
     }
-    #endregion
+
+    public void PutOutFire()
+    {
+        if (!onFire) return;
+        onFire = false;
+        Destroy(transform.GetChild(1));
+    }
 }

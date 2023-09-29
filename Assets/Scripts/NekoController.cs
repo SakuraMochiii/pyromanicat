@@ -57,13 +57,13 @@ public class NekoController : MonoBehaviour
     }
 
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.transform.CompareTag("Player"))
-        {
-            collision.gameObject.SetActive(false);
-            Instantiate(fireObj, collision.transform.position, Quaternion.identity);
-            //Explode();
-        }
-    }
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    if (collision.transform.CompareTag("Player"))
+    //    {
+    //        collision.gameObject.SetActive(false);
+    //        Instantiate(fireObj, collision.transform.position, Quaternion.identity);
+    //        //Explode();
+    //    }
+    //}
 }
