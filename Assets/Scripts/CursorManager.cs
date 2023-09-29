@@ -8,6 +8,7 @@ public class CursorManager : MonoBehaviour
     [SerializeField] private Texture2D cursorTextureClick;
     private Vector2 cursorHotspot;
     private bool pouring;
+    private Vector2 mousePosition;
 
     private void Start()
     {
@@ -17,6 +18,8 @@ public class CursorManager : MonoBehaviour
     }
     private void Update()
     {
+        mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        transform.position = mousePosition;
         if (Input.GetMouseButtonDown(0) && !pouring)
         {
             Cursor.SetCursor(cursorTextureClick, cursorHotspot, CursorMode.Auto);

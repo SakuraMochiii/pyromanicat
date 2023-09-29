@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class NekoController : MonoBehaviour
 {
+    public GameObject fireObj;
     public float speed; // speed that cat runs at to destination
     private Animator animator;
     private SpriteRenderer sr;
@@ -53,5 +54,16 @@ public class NekoController : MonoBehaviour
             Random.Range(-5.5f, 5.5f),
             Random.Range(-4f, 3f),
             0);
+    }
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.transform.CompareTag("Player"))
+        {
+            collision.gameObject.SetActive(false);
+            Instantiate(fireObj, collision.transform.position, Quaternion.identity);
+            //Explode();
+        }
     }
 }
