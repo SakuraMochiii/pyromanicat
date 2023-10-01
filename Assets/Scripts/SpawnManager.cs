@@ -18,6 +18,8 @@ public class SpawnManager : MonoBehaviour
     public int fireCount;
     public int totalObjects;
 
+    public int score;
+
     #region Main Updates
     private void Awake()
     {
