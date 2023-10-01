@@ -7,6 +7,12 @@ TagManager:
   - Enemy
   - Chest
   - fire
+  - Number1
+  - Number2
+  - Operation
+  - InputField
+  - Cursor
+  - SpawnManager
   layers:
   - Default
   - TransparentFX
