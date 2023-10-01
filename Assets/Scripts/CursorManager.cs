@@ -6,6 +6,8 @@ public class CursorManager : MonoBehaviour
 {
     [SerializeField] private Texture2D cursorTextureNormal;
     [SerializeField] private Texture2D cursorTextureClick;
+    [SerializeField] private Texture2D cursorTextureEmpty;
+
     private Vector2 cursorHotspot;
     public bool pouring;
     private Vector2 mousePosition;
@@ -45,9 +47,7 @@ public class CursorManager : MonoBehaviour
         }
         if (waterLevel < 0)
         {
-
-            // TODO: set this to a half transparent texture instead ?
-            Cursor.SetCursor(cursorTextureNormal, cursorHotspot, CursorMode.Auto);
+            Cursor.SetCursor(cursorTextureEmpty, cursorHotspot, CursorMode.Auto);
 
             waterLevel = 0;
             col.enabled = false;
@@ -57,6 +57,7 @@ public class CursorManager : MonoBehaviour
     public void refillWater()
     {
         waterLevel = maxWater;
+        Cursor.SetCursor(cursorTextureNormal, cursorHotspot, CursorMode.Auto);
     }
 
 
