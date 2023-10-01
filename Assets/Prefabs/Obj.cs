@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Obj : MonoBehaviour
 {
+<<<<<<< Updated upstream:Assets/Scripts/Obj.cs
     public bool onFire;
     public GameObject Fire;
     private GameObject cursor;
@@ -16,12 +17,25 @@ public class Obj : MonoBehaviour
 
     private SpawnManager spawnManager;
 
+=======
+    public bool onFire;
+    public GameObject Fire;
+    private GameObject cursor;
+    private CursorManager cursorScript;
+
+    public UIManager uiManager;
+
+>>>>>>> Stashed changes:Assets/Prefabs/Obj.cs
     private void Start()
     {
+
+        uiManager = FindObjectOfType<UIManager>();
+        
         onFire = false;
         cursor = GameObject.FindGameObjectWithTag("Cursor");
         spawnManager = GameObject.FindGameObjectWithTag("SpawnManager").GetComponent<SpawnManager>();
         cursorScript = cursor.GetComponent<CursorManager>();
+<<<<<<< Updated upstream:Assets/Scripts/Obj.cs
         maxSurroundFireTimer = 5;
         surroundFireTimer = maxSurroundFireTimer;
         timeSinceFireStart = 0;
@@ -43,6 +57,9 @@ public class Obj : MonoBehaviour
             }
         }
     }
+=======
+    }
+>>>>>>> Stashed changes:Assets/Prefabs/Obj.cs
     public void CatchOnFire()
     {
         if (onFire) return;
@@ -64,9 +81,14 @@ public class Obj : MonoBehaviour
             PutOutFire();
         }
         
+<<<<<<< Updated upstream:Assets/Scripts/Obj.cs
     }
 
 
+=======
+    }
+
+>>>>>>> Stashed changes:Assets/Prefabs/Obj.cs
     public void PutOutFire()
     {
         if (!onFire) return;
@@ -74,5 +96,6 @@ public class Obj : MonoBehaviour
         spawnManager.fireCount -= 1;
         onFire = false;
         Destroy(transform.parent.GetChild(1).gameObject);
+        uiManager.OnFireExtinguished();
     }
 }

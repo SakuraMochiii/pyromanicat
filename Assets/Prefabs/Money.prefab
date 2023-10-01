@@ -100,6 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onFire: 0
   Fire: {fileID: 8096115136542075006, guid: e5b5da5c4ad6b4de7a6dd164927d669a, type: 3}
+  uiManager: {fileID: 0}
 --- !u!58 &312426882
 CircleCollider2D:
   m_ObjectHideFlags: 0

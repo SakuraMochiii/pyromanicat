@@ -12,7 +12,11 @@ TagManager:
   - Operation
   - InputField
   - Cursor
+<<<<<<< Updated upstream
   - SpawnManager
+=======
+  - FireCountText
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
