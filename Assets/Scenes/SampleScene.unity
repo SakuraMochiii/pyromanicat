@@ -2280,7 +2280,7 @@ MonoBehaviour:
       type: 3}
   - m_EnemyPrefab: {fileID: 3265857903408695251, guid: 491c44ffd29a44a0482d4da608ac93d2,
       type: 3}
-  m_NumEnemy: 40
+  m_NumEnemy: 1
   fireCount: 0
   totalObjects: 0
   score: 0

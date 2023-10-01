@@ -9,19 +9,20 @@ public class FireBar : MonoBehaviour
     private float minHeight, maxHeight, currHeight, t;
     private SpawnManager spawnManager;
     private RectTransform rectTransform;
-    private GameOverScreen gameOverWin;
-    private GameOverScreenLose gameOverLose;
+
+    //private GameOverScreen gameOverWin;
+    //private GameOverScreenLose gameOverLose;
 
     private void GameOverWin()
     {
         SceneManager.LoadScene("End_Win");
-        gameOverWin.Setup(spawnManager.score);
+        //gameOverWin.Setup(spawnManager.score);
     }
 
     private void GameOverLose()
     {
         SceneManager.LoadScene("End_Lose");
-        gameOverLose.Setup(spawnManager.score);
+        //gameOverLose.Setup(spawnManager.score);
     }
 
     // Start is called before the first frame update
