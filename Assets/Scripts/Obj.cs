@@ -70,6 +70,7 @@ public class Obj : MonoBehaviour
     public void PutOutFire()
     {
         if (!onFire) return;
+        spawnManager.score += 1;
         spawnManager.fireCount -= 1;
         onFire = false;
         Destroy(transform.parent.GetChild(1).gameObject);
