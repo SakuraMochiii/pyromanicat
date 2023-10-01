@@ -3,20 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Enemy
-  - Chest
-  - fire
-  - Number1
-  - Number2
-  - Operation
-  - InputField
-  - Cursor
-<<<<<<< Updated upstream
-  - SpawnManager
-=======
-  - FireCountText
->>>>>>> Stashed changes
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -53,13 +40,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Environment
-    uniqueID: 1093576137
-    locked: 0
-  - name: Enemy
-    uniqueID: 882050169
-    locked: 0
-  - name: Player
-    uniqueID: 4203644671
     locked: 0

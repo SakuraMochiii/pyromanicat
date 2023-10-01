@@ -2564,11 +2564,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1498416603}
-<<<<<<< Updated upstream
   - {fileID: 72847625}
-=======
-  - {fileID: 733305220}
->>>>>>> Stashed changes
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
