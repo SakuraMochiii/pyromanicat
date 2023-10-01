@@ -15,17 +15,23 @@ public class SpawnManager : MonoBehaviour
     private int m_NumEnemy;
     #endregion
 
+    public int fireCount;
+    public int totalObjects;
+
     #region Main Updates
     private void Awake()
     {
+        totalObjects = 0;
         for (int i = 0; i < m_NumEnemy; i++)
         {
             for (int j = 0; j < m_EnemyTypes.Length; j++)
             {
                 var position = new Vector2(Random.Range(-5.5f, 5.5f), Random.Range(-4f, 3f));
                 Instantiate(m_EnemyTypes[j].EnemyPrefab, position, Quaternion.identity);
+                totalObjects += 1;
             }
         }
+        fireCount = 0;
     }
     #endregion
 }

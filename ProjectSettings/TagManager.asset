@@ -12,6 +12,7 @@ TagManager:
   - Operation
   - InputField
   - Cursor
+  - SpawnManager
   layers:
   - Default
   - TransparentFX

@@ -10,6 +10,8 @@ public class RefillQuestion : MonoBehaviour
     private TMP_InputField input;
     private int n1, n2, answer;
     private Image backgroundImg;
+
+    private CursorManager cursorManager;
     
     // Start is called before the first frame update
     void Start()
@@ -19,7 +21,8 @@ public class RefillQuestion : MonoBehaviour
         operationTxt = GameObject.FindGameObjectWithTag("Operation").GetComponent<TMP_Text>();
         input = GameObject.FindGameObjectWithTag("InputField").GetComponent<TMP_InputField>();
         backgroundImg = GetComponent<Image>();
-        
+
+        cursorManager = GameObject.FindGameObjectWithTag("Cursor").GetComponent<CursorManager>();
         
         randomAddition();
     }
@@ -55,7 +58,7 @@ public class RefillQuestion : MonoBehaviour
             input.text = "";
             randomAddition();
             StartCoroutine(flashColor(Color.green));
-            
+            cursorManager.refillWater();
         }
         else 
         {

@@ -10,7 +10,8 @@ public class CursorManager : MonoBehaviour
     public bool pouring;
     private Vector2 mousePosition;
     private CircleCollider2D col;
-    
+    public float waterLevel;
+    public float maxWater;
 
     private void Start()
     {
@@ -19,6 +20,7 @@ public class CursorManager : MonoBehaviour
         pouring = false;
         col = GetComponent<CircleCollider2D>();
         col.enabled = false;
+        waterLevel = maxWater;
     }
     private void Update()
     {
@@ -35,6 +37,26 @@ public class CursorManager : MonoBehaviour
             pouring = false;
             col.enabled = false;
         }
+        if (pouring)
+        {
+            waterLevel -= Time.deltaTime;
+
+            
+        }
+        if (waterLevel < 0)
+        {
+
+            // TODO: set this to a half transparent texture instead ?
+            Cursor.SetCursor(cursorTextureNormal, cursorHotspot, CursorMode.Auto);
+
+            waterLevel = 0;
+            col.enabled = false;
+            pouring = false;
+        }
+    }
+    public void refillWater()
+    {
+        waterLevel = maxWater;
     }
 
 
