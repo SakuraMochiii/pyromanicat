@@ -3,7 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Operation
+  - Enemy
+  - InputField
+  - Number2
+  - Number1
+  - Cursor
+  - SpawnManager
+  - fire
+  - ScoreText
   layers:
   - Default
   - TransparentFX

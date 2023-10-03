@@ -10,6 +10,7 @@ public class NekoController : MonoBehaviour
     private SpriteRenderer sr;
     private Vector3 destination; // cat runs to destination
     private BoxCollider2D col; //note: this collider is a trigger!
+    public SpawnManager spawner; 
     
 
     // Start is called before the first frame update
@@ -20,12 +21,16 @@ public class NekoController : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
         col = GetComponent<BoxCollider2D>();
         StartCoroutine(RunAndScratch());
+        speed = 2;
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        if (spawner.score > spawner.winValue * 0.75)
+        {
+            speed = 4;
+        }
     }
     IEnumerator RunAndScratch()
     {

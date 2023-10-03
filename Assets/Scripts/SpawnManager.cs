@@ -20,6 +20,10 @@ public class SpawnManager : MonoBehaviour
 
     public int score;
 
+    public float winValue;
+
+    public GameObject secondCat;
+
     #region Main Updates
     private void Awake()
     {
@@ -34,9 +38,21 @@ public class SpawnManager : MonoBehaviour
             }
         }
         fireCount = 0;
+        winValue = totalObjects * 5f;
+        secondCat.SetActive(false);
     }
     #endregion
+
+    private void Update()
+    {
+        if (score > 0.5f * winValue)
+        {
+            secondCat.SetActive(true);
+        }
+    }
 }
+
+
 
 [System.Serializable]
 public struct EnemySpawnInfo
